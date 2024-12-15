@@ -1,0 +1,419 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #fdfdfd;
+}
+
+/* Шапка */
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #838383;
+}
+
+/* Главный баннер */
+.main-banner {
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.banner-content {
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.banner-content h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    background-color: #838383;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e65c00;
+}
+
+.about {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 18px;
+}
+
+#services {
+    padding: 40px 0;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#services h3 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(50% - 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.service-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.service h4 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.service p {
+    font-size: 1.2em;
+    color: black;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.projects-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+}
+
+.projects-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.projects-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Оформление проекта */
+.project {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    height: 600px;
+}
+
+.project-sliders {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    overflow: hidden;
+}
+
+.project-sliders img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    color: #ffffff !important;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.project-details {
+    flex: 1;
+    text-align: left;
+}
+
+.project-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #838383;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.cta-btn:hover {
+    background-color: #e65c00;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    max-width: 800px;
+    min-height: 150px;
+    color: black;
+    text-align: center;
+}
+
+.contact-info h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.contact-info a {
+    color: #838383;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для реквизитов компании */
+.company-details {
+    margin-top: 80px;
+    padding: 15px;
+    background-color: #838383;
+    color: #fffefe;
+}
+
+.company-details h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.company-details p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project-details {
+        text-align: center;
+    }
+
+    .slider-btn {
+        top: 45%;
+    }
+
+    .contact-info,
+    .company-details {
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 48px;
+    }
+
+    .banner-content p {
+        font-size: 18px;
+    }
+
+    .btn-primary {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    .service {
+        flex: 1 1 calc(50% - 10px);
+        /* Два блока в ряд на планшетах */
+    }
+
+    .slider-image {
+        width: 120%;
+        /* Увеличение изображения на планшетах */
+        transform: scale(1.1);
+        /* Увеличение изображения на планшетах */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-content h1 {
+        font-size: 32px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .service h4 {
+        font-size: 1.5em;
+    }
+
+    .service p {
+        font-size: 1em;
+    }
+
+    .service {
+        flex: 1 1 100%;
+        /* Один блок в ряд на мобильных устройствах */
+    }
+
+    .service h4 {
+        font-size: 1.2em;
+        /* Уменьшен размер шрифта заголовка */
+    }
+
+    .service p {
+        font-size: 0.9em;
+        /* Уменьшен размер шрифта описания */
+    }
+
+    .projects-section h2 {
+        font-size: 28px;
+    }
+
+    .projects-section p {
+        font-size: 16px;
+    }
+
+    .slider-image {
+        width: 150%;
+        /* Увеличение изображения на мобильных устройствах */
+        transform: scale(1.2);
+        /* Увеличение изображения на мобильных устройствах */
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+}
